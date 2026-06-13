@@ -15,8 +15,7 @@
 #     shield: corne_left
 #     cmake-args: -DCONFIG_ZMK_USB_LOGGING=y
 #     artifact-name: corne_left_with_logging
-#
----
+# ---
 include:
   # QWERTY BT
   - board: nice_nano_v2
@@ -24,48 +23,15 @@ include:
     keymap: qwerty
     format: bt
     artifact-name: charybdis_qwerty_left
+
   - board: nice_nano_v2
     shield: charybdis_right
     keymap: qwerty
     format: bt
     artifact-name: charybdis_qwerty_right
-    # snippet: studio-rpc-usb-uart
-
-#  # Colemak DH BT
-#  - board: nice_nano_v2
-#    shield: charybdis_left
-#    keymap: colemak_dh
-#    format: bt
-#    artifact-name: charybdis_colemak_left
-#  - board: nice_nano_v2
-#    shield: charybdis_right
-#    keymap: colemak_dh
-#    format: bt
-#    artifact-name: charybdis_colemak_right
-#    snippet: studio-rpc-usb-uart
-#
-
-  # QWERTY BT
-  - board: nice_nano_v2
-    shield: charybdis_left
-    keymap: qwerty
-    format: bt
-    artifact-name: charybdis_qwerty_left
-  - board: nice_nano_v2
-    shield: charybdis_right
-    keymap: qwerty
-    format: bt
-    artifact-name: charybdis_qwerty_right
-    snippet: studio-rpc-usb-uart
 
   # Firmware Reset
   - board: nice_nano_v2
     shield: settings_reset
     format: reset
     artifact-name: firmware_reset_nano_v2
-
-  # Firmware Reset
-  - board: seeeduino_xiao_ble
-    shield: settings_reset
-    format: reset
-    artifact-name: firmware_reset_xiao_ble
